@@ -1,0 +1,147 @@
+.navbar-brand i{
+   color:#f44336;
+        text-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
+}
+.navbar-nav a{
+    -webkit-transition:all 0.5s; /* Safari */
+    transition:all 0.5s;
+}
+.navbar-nav a:hover{
+    color:rgb(239, 26, 182) !important;
+}
+.header{
+   background-image: url(../images/cover2.jpg);
+    background-attachment: fixed;
+    
+}
+#profile{
+    -webkit-transition:all 0.5s; /* Safari */
+    transition:all 0.5s;
+}
+
+.btn-simple:hover{
+    text-decoration: underline;
+    
+}
+
+.parallax{
+  width:100%;
+  height:570px;
+
+  display: block;
+  background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+}
+.navbar{
+    padding-bottom: 15px;
+}
+.logo-container .logo{
+     overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    width: 50px;
+    float: left;
+}
+
+.logo-container .brand{
+    font-size: 16px;
+    color: #FFFFFF;
+   
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+   
+    height: 40px;
+    text-align: left;
+}
+.logo-container .brand-material{
+    font-size: 18px;
+    margin-top: 15px;
+    height: 25px;
+    width: auto;
+}
+.logo-container .logo img{
+    width: 100%;
+}
+.navbar-small .logo-container .brand{
+    color: #333333;
+}
+
+
+.sliders {
+        
+        margin: 50px auto;
+    
+    }
+.sliders div{
+ 
+}
+.sliders img{
+    transition: opacity 1s;
+   opacity: 0.35;
+}
+.sliders:hover img{
+    cursor: pointer;
+
+}
+.sliders:hover img:hover{
+    opacity: 1;
+}
+
+@media (max-width:400px){
+    .sliders img{
+        opacity: 1;
+    }
+}
+
+
+.sliders
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: #9c27b0;
+    }
+
+/*------------------------
+            video pane
+------------------------------*/
+.modal{
+    
+    position: fixed;
+    width: 90%;
+    overflow-y: auto;
+    
+}
+.no-image h5{
+    font-size:14px;
+}
+.modal-open{
+    padding-bottom: 10px !important;
+}
+.modal-dialog{
+    margin-top: 10px !important;
+   width:90%;
+ 
+    
+}
+#player{
+    border:none;
+    transition: all 1s;
+    
+}
+#player:hover{
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+
