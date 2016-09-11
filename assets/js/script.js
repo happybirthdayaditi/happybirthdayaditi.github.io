@@ -1,15 +1,17 @@
 
 
 
+/*-------------------------------------
+            JavaScript Code
+--------------------------------------*/
 
-
-a=0;
+a = 0;
 function slide()
 {
     
     var img = document.getElementById('profile');
-    img.className
-img.src="assets/images/face"+a+".jpg";
+    
+img.src = "assets/images/face"+a+".jpg";
 
 
 if (a < 11)
@@ -18,40 +20,15 @@ a++;
 }
 else
 {
-a=0;
+a = 0;
 }
 setTimeout("slide()" , 4000);
 }
-
+/*--------------------------------------
+                jQuery code
+----------------------------------------*/
 $(function(){
-    
-    $('.friends').slick({
-  centerMode: true,
-        dots: true,
-        infinite: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+
     
     /**-----------------------------------
                 showing video pane
@@ -139,6 +116,6 @@ $(function(){
     
     
     $('#video-pane').on('hidden.bs.modal', function () {
-    ("#player").attr("src","");
+    $("#player").attr("src","");
 })
 })
