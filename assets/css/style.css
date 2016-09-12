@@ -114,7 +114,13 @@
     .slick-next:before {
         color: #9c27b0;
     }
-
+.avatar div img{
+    z-index: 11111;
+}
+.profile-page .profile  img {
+  max-width: 160px;
+  margin: -80px auto 0;
+}
 /*------------------------
             video pane
 ------------------------------*/
