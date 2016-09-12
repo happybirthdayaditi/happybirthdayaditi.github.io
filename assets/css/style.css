@@ -148,7 +148,7 @@
     }
 }
 
-@media(min-width:600px){
+@media(min-width:400px){
      .modal{
         width:97%;
     }
@@ -157,8 +157,8 @@
     }
     
     #player{
-        width: 674.59px;
-        height: 379.38px;
+        width: 452px;
+        height: 339px;
     }
 }
 
