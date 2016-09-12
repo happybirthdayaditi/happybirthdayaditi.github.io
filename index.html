@@ -77,20 +77,8 @@
 							<i class="fa fa-instagram"></i>
 						</a>
 		            </li>
-                    <li>
-                        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-                        </fb:login-button>
-                        <div id="status">
-                        </div>
-                    </li>
-                    <li>
-                        <div
-                          class="fb-like"
-                          data-share="true"
-                          data-width="450"
-                          data-show-faces="true">
-                        </div>
-                    </li>
+                    <li><div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="true" data-auto-logout-link="true"></div></li>
+                    
         		</ul>
         	</div>
     	</div>
@@ -359,13 +347,14 @@
     });
   };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=512298112302872";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
         
  // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
